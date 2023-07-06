@@ -6,7 +6,7 @@ import torch.nn.functional as F
 device = torch.device('cpu')
 
 # LOAD EVERYTHING
-@st.cache_resource
+# @st.cache_resource
 def load_model(fp):
     mdl = torch.jit.load(fp, map_location=device)
     mdl.eval()
