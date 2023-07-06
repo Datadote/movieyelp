@@ -18,10 +18,8 @@ with left_col:
         - Rating distribution: 
         """
     )
-    im = Image.open('imgs/movielens_1m_ratings.jpg')
-    st.image(im)
-#     st.image('movielens_1m_ratings.jpg')
-
+    st.image('imgs/movielens_1m_ratings.jpg')
+    
 with right_col:
     st.subheader('Model: Factorization Machine')
     st.markdown(
