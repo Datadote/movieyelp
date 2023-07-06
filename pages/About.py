@@ -35,10 +35,10 @@ with right_col:
         - Original & predicted rating distribution:
         """
     )
-#     st.image('ratings_post_train.jpg')
-#     st.markdown(
-#         """
-#         - TSNE showing model learned to separate movie genres:
-#         """
-#     )
-#     st.image('tsne_genre.jpg')
+    st.image('imgs/ratings_post_train.jpg')
+    st.markdown(
+        """
+        - TSNE showing model learned to separate movie genres:
+        """
+    )
+    st.image('imgs/tsne_genre.jpg')
