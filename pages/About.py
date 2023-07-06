@@ -1,6 +1,7 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+from PIL import Image
 
 st.title('Data and Model Info')
 left_col, right_col = st.columns([1,1])
@@ -17,7 +18,9 @@ with left_col:
         - Rating distribution: 
         """
     )
-    st.image('movielens_1m_ratings.jpg')
+    im = Image.open('movielens_1m_ratings.jpg')
+    st.image(im)
+#     st.image('movielens_1m_ratings.jpg')
 
 with right_col:
     st.subheader('Model: Factorization Machine')
@@ -32,10 +35,10 @@ with right_col:
         - Original & predicted rating distribution:
         """
     )
-    st.image('ratings_post_train.jpg')
-    st.markdown(
-        """
-        - TSNE showing model learned to separate movie genres:
-        """
-    )
-    st.image('tsne_genre.jpg')
+#     st.image('ratings_post_train.jpg')
+#     st.markdown(
+#         """
+#         - TSNE showing model learned to separate movie genres:
+#         """
+#     )
+#     st.image('tsne_genre.jpg')
