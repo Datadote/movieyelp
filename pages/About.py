@@ -18,7 +18,7 @@ with left_col:
         - Rating distribution: 
         """
     )
-    im = Image.open('movielens_1m_ratings.jpg')
+    im = Image.open('imgs/movielens_1m_ratings.jpg')
     st.image(im)
 #     st.image('movielens_1m_ratings.jpg')
 
